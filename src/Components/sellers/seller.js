@@ -3,11 +3,7 @@ import React, { Component } from "react";
 class Seller extends Component {
   render() {
     return (
-      //   <>
-      // {/* <li className="customer">
-      //   <h1>{this.props.number}</h1>
-      //   <span>{this.props.title}</span>
-      // </li> */}
+      
 
       <div class="top-sellers-card">
         <div class="card-num bg-red">{this.props.number}</div>
