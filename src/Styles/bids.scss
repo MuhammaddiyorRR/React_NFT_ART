@@ -1,0 +1,90 @@
+.hot-bids{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+    padding: 0 8%;
+}
+
+.hot-bids-card{
+    background: #202128;
+    border-radius: 40px;
+    width: 100%;
+    padding: 10% 9%;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.hot-bids-card-img{
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.hot-bids-card-img img{
+    border-radius: 13%;
+    width: 100%;
+}
+.hot-bids-card-img img:hover{
+    transform: scale(1.2);
+}
+
+.art-name{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 5px 0;
+}
+
+.name{
+    width: 50%;
+    padding: 8% 0;
+}
+
+.name p{
+    padding-top: 10%;
+}
+
+.card-image{
+    width: 50%;
+}
+/* .card-image img{ */
+    /* width: 100%; */
+/* } */
+
+
+@media(max-width:1250px){
+    .hot-bids{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+@media(max-width:950px){
+    .hot-bids{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 15%;
+    }
+}
+@media(max-width:550px){
+    .hot-bids{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0 22%;
+        margin-bottom: 100%;
+
+    }
+}
+
+
+
+.center a{
+    padding: 14px 70px;
+    margin-bottom: 5%;
+}
+.center a:hover{
+    padding: 17px 120px;
+    margin-bottom: 5%;
+}

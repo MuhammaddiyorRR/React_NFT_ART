@@ -1,0 +1,279 @@
+// @import "./utils.scss";
+// @import "./skills.scss";
+// // @import "./speaking.scss";
+// @import "./pricing.scss";
+// @import "./headers.scss";
+// @import "./about.scss";
+// @import "./contactus.scss";
+@import "./navbar.scss";
+@import "./sellers.scss";
+@import "./bids.scss";
+@import "./footer.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+  transition: 0.3s;
+}
+
+body {
+  background: #24252d;
+  color: #fff;
+}
+
+.header .image {
+    position: relative;
+    overflow: hidden;
+    // width: 130%;
+}
+
+.header {
+  display: flex;
+  padding: 0 0 0 8%;
+}
+
+.header .image {
+  position: relative;
+  overflow: hidden !important;
+  width: 130%;
+}
+.header .image .bg {
+  width: 80%;
+}
+
+h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 170%;
+  /* color: linear-gradient(93.8deg, #FF00AE 1.02%, #FF0066 92.85%); */
+  color: rgba(255, 0, 174, 1);
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.header .text {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.header .text p {
+  width: 90%;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 144%;
+}
+
+.learn-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+}
+
+.play {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+  background: #000;
+  padding-left: 1%;
+}
+
+.color-red {
+  /* color:  #FF005C; */
+  color: rgba(255, 0, 174, 1);
+}
+.bg-red {
+  background: linear-gradient(135deg, #ff00b8 7.81%, #ff005c 100%);
+  border-radius: 10px;
+}
+.bg-red:hover {
+  background: #24252d;
+  outline: 1px solid #ff00b8;
+}
+
+.center {
+  text-align: center;
+}
+.center span {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+}
+
+.center p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  /* or 167% */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.nav-btns .button {
+  padding: 11px 33px;
+}
+
+.header-btns .button {
+  padding: 17px 55px;
+}
+
+.border-red {
+  color: rgba(255, 0, 174, 1);
+  border: 1px solid rgba(255, 0, 174, 1);
+  border-radius: 10px;
+}
+.border-red:hover {
+  color: #fff;
+  background: linear-gradient(135deg, #ff00b8 7.81%, #ff005c 100%);
+}
+
+.btns {
+  display: flex;
+  gap: 3%;
+}
+
+.phone1 {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 63%;
+  z-index: 2;
+  animation: phone1 5s infinite;
+}
+.phone2 {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  width: 63%;
+  z-index: 1;
+  animation: phone2 5s infinite;
+}
+
+@keyframes phone1 {
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+@keyframes phone2 {
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (max-width: 1400px) {
+  h1 {
+    font-size: 43px;
+    line-height: 145%;
+  }
+
+  .header .text p {
+    font-size: 14px;
+  }
+
+  .header-btns .button {
+    padding: 12px 45px;
+  }
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 39px;
+    line-height: 140%;
+  }
+
+  .header .text p {
+    font-size: 12px;
+  }
+
+  .header-btns .button {
+    padding: 10px 40px;
+  }
+
+  .play {
+    width: 50px;
+    height: 50px;
+  }
+  .play img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 39px;
+    line-height: 140%;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header .text p {
+    font-size: 12px;
+    padding: 5% 0;
+  }
+
+  .header .image {
+    width: 100%;
+  }
+
+  .header-btns .button {
+    padding: 10px 40px;
+  }
+
+  .learn-more {
+    padding-top: 5%;
+  }
+  .play {
+    width: 50px;
+    height: 50px;
+  }
+  .play img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 650px) {
+  h1 {
+    font-size: 34px;
+    line-height: 140%;
+  }
+
+  .header-btns .button {
+    font-size: 12px;
+    padding: 8px 30px;
+  }
+
+  .learn-more {
+    padding-top: 5%;
+  }
+  .play {
+    width: 40px;
+    height: 40px;
+  }
+  .play img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    padding-top: 5%;
+    font-size: 28px;
+    line-height: 140%;
+  }
+}
